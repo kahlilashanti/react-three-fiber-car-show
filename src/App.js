@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import './style.css'
 import { Ground } from './Ground';
+import { Car } from './Car';
 
 function CarShow() {
   return (
@@ -11,6 +12,7 @@ function CarShow() {
       <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
 
       <color args={[0, 0, 0]} attach="background" />
+      <Car />
 
       {/* <mesh>
         <boxGeometry args={[1, 1, 1]} />
